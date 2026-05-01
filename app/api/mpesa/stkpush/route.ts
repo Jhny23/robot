@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     const token = await getToken()
 
     // Callback URL - use ngrok or your domain in production
-    const callbackUrl = process.env.MPESA_CALLBACK_URL || 'https://yourdomain.com/api/mpesa/callback'
+    const callbackUrl = process.env.MPESA_CALLBACK_URL || 'https://fsociety-23.vercel.app/api/mpesa/callback'
 
     const payload = {
       BusinessShortCode: SHORTCODE,
